@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="index.css" rel="stylesheet">
+<title>FileProxy</title>
+<meta charset=0"UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-image: url('./images/test.png');
+}
+  
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: rgb(40, 40, 40);
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: rgb(40, 40, 40);
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: rgb(40, 40, 40);
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <input type="image" src="./images/smaller.png" id="myButton" />
+<script type="text/javascript">
+document.getElementById("myButton").onclick = function () {
+location.href = "./EXP.html";
+};
+</script>
+  <a href="./movies.html" class="right">Movies</a>
+  <a href="./apps.html" class="right">Apps</a>
+  <a href="./proxy.html" class="right">Google Search</a>
+  <a href="./links.html" class="right">Proxies</a>
+  <a href="./games.html" class="right">Games</a>
+</div>
+
+  
+<div class="header">
+<a href="./main/Games/Slope">
+  <button style="background-image: url('/images/slopeico.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button>
+  <a href="./main/Games/RetroBowl">
+  <button style="background-image: url('/images/retrobowl.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button>
+</a>
+<a href="./service/hvtrs8%2F-wuw%2Cgmoelg.aoo%2Fqecrah%3Dq%3Fgmoelg%2Bqnckg%26qowrae%3Fhr%26gi%3FfDfiY%2FzmKIvfktQR5d2PsC0%24idlqie%3DCK70O_WACACA%5B-PlhHqn7hAc%40F3p2lWh%60Tr5%3AfFmQ5DY%24vgd%3F0chWKGwhsnsk_p4d9ChUrpoSIJeT-%40N%5BQ6dWDAAq%26waat%3F5%24os%3Deomgne)slaie%24gq_ncr%3DAgfnf3Otf2n6GAOyAAeAGICEGLGDOgeICBAA%40BAxCzKIAACQeASQqQOyAAeAGICEGLGDOgWICBAA%40DKIAACQeASQqQOyAAeAGICEGLGDOgeINhAA%40BAxCzKFAACQeASy%40QeAGICEMhGINhAA%40BAxCxADCRFHCRFRCzmLAACQeASQqQOQewG6AweuGICEGLGDGIOBMgeINhAA%40BFUCjmOAC6QeASQqQOQzwGQ2QLQCFk8F2FXGGeBaA%404CYCB4gMICeCWigGJOC6zNjGuLS6xoAGAmAGB%24salkelt%3Fgus%2Fwkz">
+  <button style="background-image: url('/images/snakeicon.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button>
+ </a>
+<a href="./service/hvtrs8%2F-u%60g302.eivhwb%2Cim%2Feaoeq%2Fpul3-ildgx%2Chvmn">
+  <button style="background-image: url('/images/run.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button>
+ </a>
+<a href="./main/Games/surf/index.html">
+  <button style="background-image: url('/images/sub.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button>
+  <a href="./service/hvtrs8%2F-lcgeef.aoo%2Fcpk%2Frlcy0%2Fv-pez-1d0%2F/">
+  <button style="background-image: url('/images/trex.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button>
+<a href="./service/hvtrs8%2F-optgin.faqhlev.mre%2Faomkkealkciep%2F">
+  <button style="background-image: url('/images/cookieclicker.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button>
+  <a href="./service/hvtrs8%2F-fnarp%7Bbkrf.u3veahlia.aoo%2F">
+  <button style="background-image: url('/images/Flappy_Bird_icon.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button>
+ </a>
+  <a href="./privatelogin.html">
+  <button style="background-image: url('/images/priv.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button>
+ </a>
+<a href="./service/hvtrs8%2F-96bdkvj601i4m38cs6vivvrgqf0mhai6-c-qiveq-mpgnqoaicl%2Cgmoelguqepcmnvelt%2Ccmm-gcdeevs-idr%3Dupl%3Fhvtrs8%2F-25421%3B6%3A3%2F1537223%3B468067055%3B.rrgvkeu.gdktoyqive%2Ccmm-urlmafs-b-119%3A92109%2F11151751958%3A2%3A142%3B%2Fdineq%2Frs%2Cxol">
+  <button style="background-image: url('/images/pixel-shooter.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button>
+ </a>
+  <a href="./service/hvtrs8%2F-kpulkgr%2Cim">
+  <button style="background-image: url('/images/krunker.jpg'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button>
+ </a>
+<a href="./service/hvtrs8%2F-wctahfoauoeltcrkeq.aoo%2Fup%2Fcmnvelt-urlmafs-gcmgs-dpidt%2Fbmsq%2F">
+  <button style="background-image: url('/images/drift.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button>
+ </a>
+<a href="./service/hvtrs8%2F-wuw%2Fsktgs%2Forelsmckan.eomgnewsgraoltgnv.aoo%2Feafggtq%2Fkfp%3Fwrn%3Djtvpq%3A-%2Fqiveq.eomgne%2Ccmm-sktg%2Fq025pt4b-jmhln%7B-vrkgeep.zmn">
+  <button style="background-image: url('/images/johnnytriger.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button>
+ </a>
+<a href="./service/hvtrs8%2F-hmlg-ko%2Ccmm-">
+  <button style="background-image: url('/images/holeio.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button>
+ </a>
+  <a href="./service/hvtrs8%2F-v4p%3Bd%3Bt6.qsn.jwadl.lev%2Fjtol-4215938-ildgx%2Chvmn">
+  <button style="background-image: url('/images/deepest-sword.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button></a>
+  <a href="./service/hvtrs8%2F-wuw%2Ccjeqs%2Ccmm-">
+  <button style="background-image: url('/images/chess.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button></a>
+<a href="./service/hvtrs8%2F-wuw%2Cx%60oz.aoo%2Fgn%2FUQ%2Frlcy-gcmgs-fmrvnktg%2F%40T7P0X%3B9%3BVJ2">
+  <button style="background-image: url('/images/fortnite-xbox.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button></a>
+<a href="./service/hvtrs8%2F-pna%7B.eedopcgnmw%2Ccmm-mcln%2F!%2Ffegpnilk%3Dgcmg-kd%3F44bda%6004-f844%2F445f-%3Be76%2F2f9g47cfeg0c%26wto_qowrae%3Fsjoptauv">
+  <button style="background-image: url('/images/fortnite-nvdia.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button></a>
+  <a href="./service/hvtrs8%2F-nmweg%2Cmg%2Fpo%60lmx-">
+  <button style="background-image: url('/images/boblox.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button></a>
+<a href="./service/hvtr%3A-%2Fqlktjep.ko-">
+  <button style="background-image: url('/images/slither.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button></a>
+<a href="./service/hvtrs8%2F-aeap.ko-">
+  <button style="background-image: url('/images/agario.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button></a>
+<a href="./service/hvtrs8%2F-pcpgr%2Fim.aoo%2F">
+  <button style="background-image: url('/images/paperio.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button></a>
+  <a href="./service/hvtrs8%2F-ecgnepcpadt%2Fbh5%2Cpcggs%2Cdgv-">
+  <button style="background-image: url('/images/minecraft.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button></a>
+<a href="./service/hvtrs8%2F-kzd%2Cfo%2Flou%2Feaoeq%2Fpo%60lmx%2Chvmn">
+  <button style="background-image: url('/images/roserver2.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button></a>
+<a href="./service/hvtrs8%2F-kzd%2Cfo%2Flou%2F">
+  <button style="background-image: url('/images/kxdfm.gif'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button></a>
+<a href="./service/hvtrs8%2F-wuw%2Cfpit.aoo%2F">
+  <button style="background-image: url('/images/friv.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button></a>
+<a href="./service/hvtrs8%2F-gcmgs%2Follkng.ko-gcmg%2FPefBcln_T1-">
+  <button style="background-image: url('/images/redball4.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button></a>
+<a href="./service/hvtrs8%2F-wuw%2Ccmonmctjgcmgs%2Ccmm-0%2Fbnozopz-pna%7B">
+  <button style="background-image: url('/images/bloxorz.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button></a>
+<a href="./service/hvtrs8%2F-kzd%2Cfo%2Flou%2Feaoeq%2Fnawnahgr%2Chvmn">
+  <button style="background-image: url('/images/android.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button></a>
+<a href="./service/hvtrs8%2F-kzd%2Cfo%2Flou%2Feaoeq%2Fqtwm%60lg-eu%7Bs%2Chvmn">
+  <button style="background-image: url('/images/stumble.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button></a>
+<a href="./service/hvtrs8%2F-kzd%2Cfo%2Flou%2Feaoeq%2Foenol-rlcyermuld%2Chvmn">
+  <button style="background-image: url('/images/melon.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button></a>
+<a href="./service/hvtrs8%2F-flf%2Crwn1.ko-fmngd%2Fil%2F3%2F">
+  <button style="background-image: url('/images/fnf.gif'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button></a>
+  <a href="./service/hvtrs8%2F-bccirmooseaoe%2Cim%2F%60aakpommq-eaoe%2Ceobgd">
+  <button style="background-image: url('/images/backroms.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button></a>
+<a href="./main/getaway.html">
+  <button style="background-image: url('/images/getaway.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button></a>
+<a href="./service/hvtrs8%2F-kzd%2Cfo%2Flou%2Feaoeq%2Fqilgkne-oolsveps%2Chvmn">
+  <button style="background-image: url('/images/rumdidlyrumrum.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button></a>
+<a href="./service/hvtrs8%2F-wuw%2Cykv%2Ccmm-gcmgs-Hglno%2FKktvy%2FLwnah%60oz%2Fknfez.jtol">
+  <button style="background-image: url('/images/hellokittylunchbox.png'); background-size: cover; width: 185px; height: 185px; border-radius: 20%; border: none; cursor: pointer;"></button></a>
+</div>
+
+<div class="center" id="mainContent"
+  <p> Test </p></div>
+<script src="uv/uv.bundle.js"></script>
+<script src="uv/uv.config.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

