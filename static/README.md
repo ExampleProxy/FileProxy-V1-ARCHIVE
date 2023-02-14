@@ -1,30 +1,34 @@
-# ultraviolet-scripts
-Core Ultraviolet scripts
 
-# Configuration
-Configure Ultraviolet for both client-hooking & service worker in `uv.config.js`
-```javascript
-self.__uv$config = {
-    bare: '/bare/',
-    prefix: '/service/',
-    encodeUrl: Ultraviolet.codec.xor.encode,
-    decodeUrl: Ultraviolet.codec.xor.decode,
-    handler: '/uv.handler.js',
-    bundle: '/uv.bundle.js',
-    config: '/uv.config.js',
-};
+![Logo](https://uv.guestyrepl.repl.co/main/fullogo.png)
+![Logo](https://uv.guestyrepl.repl.co/main/filedark.png)
+
+# FileProxy
+
+FileProxy is a proxy that is basically a html file
+
+
+## Authors
+
+- [@GuestyGit](https://www.github.com/GuestyGit)
+
+
+## Deployment
+
+To deploy this project run
+
+```bash
+$ git clone https://github.com/GuestyGit/FileProxy --recursive
+$ cd FileProxy
+$ npm install
+$ npm start
 ```
+---
 
 
-# Example Usage
-```javascript
-importScripts('/PATHTOSCRIPTS/uv.sw.js');
+## Startup
 
-const sw = new UVServiceWorker();
+To run the project use
 
-self.addEventListener('fetch', event =>
-    event.respondWith(
-        sw.fetch(event)
-    )
-);
+```bash
+  npm start
 ```
